@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Dark0ne</title>
+  <title>Dark0ne s blogs</title>
   
-  
+  <subtitle>世界上有那么多特长，为何我偏偏擅长念念不忘</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
