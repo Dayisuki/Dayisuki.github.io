@@ -22,7 +22,7 @@
 <meta property="og:url" content="https://dayisuki.github.io/2017/10/20/使用hexo+github部署自己的博客/index.html">
 <meta property="og:site_name" content="Dark0ne&#39;s blogs">
 <meta property="og:description" content="0x01 安装及配置开启github pages先注册一个github账号，然后先登录你之前注册账号时用的邮箱，认证之后，选择新建仓库 安装git  安装nodejs  安装hexo创建一个用于存放hexo组件的目录，我这里创建一个blog目录为例，进入创建好的blogs目录，右键选择git bash使用npm安装hexo客户端： 1npm install hexo-cli -g 下载好hexo后">
-<meta property="og:updated_time" content="2017-10-20T09:01:54.065Z">
+<meta property="og:updated_time" content="2017-10-20T09:16:43.711Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用hexo+github部署自己的博客">
 <meta name="twitter:description" content="0x01 安装及配置开启github pages先注册一个github账号，然后先登录你之前注册账号时用的邮箱，认证之后，选择新建仓库 安装git  安装nodejs  安装hexo创建一个用于存放hexo组件的目录，我这里创建一个blog目录为例，进入创建好的blogs目录，右键选择git bash使用npm安装hexo客户端： 1npm install hexo-cli -g 下载好hexo后">
@@ -146,13 +146,13 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
-                        <li>友情链接</li>
+                        <li>Friends</li>
                         
                         
-                        <li>关于我</li>
+                        <li>About Me</li>
                         
                     </ul>
                 </div>
@@ -276,7 +276,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap"><article id="post-使用hexo+github部署自己的博客" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -342,14 +342,13 @@
 <h2 id="0x04-预览和修改"><a href="#0x04-预览和修改" class="headerlink" title="0x04 预览和修改"></a>0x04 预览和修改</h2><p>使用命令hexo s[erver]启动服务器，其中[..]为可选输入，git解析命令时会自动补全。使用浏览器访问localhost:4000预览效果，退出server则使用Ctrl+c。<br>　　按照第三步进行修改，保存后通过浏览器刷新即可预览修改。有时因为Cache的缘故，刷新后没有更新修改。使用命令hexo clean清楚缓存，然后通过hexo g[enerate]重新生成网站，再启动服务器，刷新预览。<br>　　最终修改确定后，即可进入下一步。</p>
 <h2 id="0x05-同步到github"><a href="#0x05-同步到github" class="headerlink" title="0x05 同步到github"></a>0x05 同步到github</h2><p>使用命令hexo g &amp;&amp; hexo d或者直接hexo d[eploy]将你的博客发布到github上了，当然需要根据提示输入你的Github用户名和密码。<br>　　如果部署失败，尝试上述第一步中_config.yml配置文件中deploy的type改成git，然后运行下 命令npm install hexo-deployer-git –save，再hexo g，hexo d。</p>
 <h2 id="0x06-其他小技巧"><a href="#0x06-其他小技巧" class="headerlink" title="0x06 其他小技巧"></a>0x06 其他小技巧</h2><p>1.遇到的问题：</p>
-<h3 id="1-1"><a href="#1-1" class="headerlink" title="1.1"></a>1.1</h3><p>一般新建完之后，就需要对该博文源代码进行编辑，通常你需要依次打开 hexo-home/source/_post 目录，然后在成堆的Markdown文件中找到刚才创建的文档title.md。</p>
-<p>2.新建博文后立刻打开编辑器：<br>在 Hexo 目录下的 scripts 目录（若没有，则新建一个）中创建一个JavaScript 脚本，监听 hexo new 这个动作。并在检测到 hexo new 之后，执行编辑器打开的命令。<br>使用命令 hexo version 来查看自己的hexo版本,因为我的hexo版本是3，请注释掉非当前版本的代码，或者直接复制对应脚本的代码<br>Windows平台：</p>
+<h3 id="1-1"><a href="#1-1" class="headerlink" title="1.1"></a>1.1</h3><p>2.一般新建完之后，就需要对该博文源代码进行编辑，通常你需要依次打开 hexo-home/source/_post 目录，然后在成堆的Markdown文件中找到刚才创建的文档title.md。<br>新建博文后立刻打开编辑器：<br>在 Hexo 目录下的 scripts 目录（若没有，则新建一个）中创建一个JavaScript 脚本，监听 hexo new 这个动作。并在检测到 hexo new 之后，执行编辑器打开的命令。<br>使用命令 hexo version 来查看自己的hexo版本,因为我的hexo版本是3，请注释掉非当前版本的代码，或者直接复制对应脚本的代码<br>Windows平台：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">var _exec = require(&apos;child_process&apos;).exec;</div><div class="line">//</div><div class="line"></div><div class="line">// Hexo 2.x</div><div class="line">/*</div><div class="line">hexo.on(&apos;new&apos;, function(path)&#123;</div><div class="line">_exec(&apos;start &quot;&quot; &quot;编辑器的绝对路径\\编辑器.exe&quot; &apos; + path);</div><div class="line">&#125;);</div><div class="line">*/</div><div class="line"></div><div class="line">//Hexo 3</div><div class="line">hexo.on(&apos;new&apos;, function(data)&#123;</div><div class="line">_exec(&apos;start &quot;&quot; &quot;编辑器的绝对路径\\编辑器.exe&quot; &apos; + data.path);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <p>编辑器须为绝对路径，如我的：<br>D:\Program Files\Sublime Text 3\sublime_text.exe　　<br>Mac平台：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var exec = require(&apos;child_process&apos;).exec;</div><div class="line">// Hexo 2.x 用户复制这段</div><div class="line">hexo.on(&apos;new&apos;, function(path)&#123;</div><div class="line">    exec(&apos;open -a &quot;编辑器绝对路径.app&quot; &apos; + path);</div><div class="line">&#125;);</div><div class="line">// Hexo 3 用户复制这段</div><div class="line">hexo.on(&apos;new&apos;, function(data)&#123;</div><div class="line">    exec(&apos;open -a &quot;编辑器绝对路径.app&quot; &apos; + data.path);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <p>3.告别多说，拥抱 Disqus</p>
 <p>4.多设备同步博客</p>
-<p>注：本文摘抄之moxfive、几位大神，也走过很多坑，加入了自己的一些解决方案。本博客主题用的是yelee，有关主题介绍请查看<a href="http://moxfive.coding.me/yelee/。评论插件使用" target="_blank" rel="external">http://moxfive.coding.me/yelee/。评论插件使用</a> Disqus ，需翻墙才能查看及留言。</p>
+<p>注：本文摘抄之moxfive、Mochazz等，也走过很多坑，加入了自己的一些解决方案。本博客主题用的是yelee，有关主题介绍请点击查看<a href="http://moxfive.coding.me/yelee" target="_blank" rel="external">yelee</a>。评论插件使用 Disqus ，需翻墙才能查看及留言。</p>
 
       
     </div>
@@ -358,17 +357,17 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/10/20/使用hexo+github部署自己的博客/">使用hexo+github部署自己的博客</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主页">Dark0ne</a></p>
-        <p><span>发布时间:</span>2017-10-20, 09:36:45</p>
-        <p><span>最后更新:</span>2017-10-20, 17:01:54</p>
+        <p><span>Title:</span><a href="/2017/10/20/使用hexo+github部署自己的博客/">使用hexo+github部署自己的博客</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">Dark0ne</a></p>
+        <p><span>Created:</span>2017-10-20, 09:36:45</p>
+        <p><span>Updated:</span>2017-10-20, 17:16:43</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/10/20/使用hexo+github部署自己的博客/" title="使用hexo+github部署自己的博客">https://dayisuki.github.io/2017/10/20/使用hexo+github部署自己的博客/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://dayisuki.github.io/2017/10/20/使用hexo+github部署自己的博客/　　作者: Dark0ne" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>Full URL:</span><a class="post-url" href="/2017/10/20/使用hexo+github部署自己的博客/" title="使用hexo+github部署自己的博客">https://dayisuki.github.io/2017/10/20/使用hexo+github部署自己的博客/</a>
+            <span class="copy-path" data-clipboard-text="From https://dayisuki.github.io/2017/10/20/使用hexo+github部署自己的博客/　　By Dark0ne" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
         </p>
     </div>
 
@@ -389,7 +388,7 @@
 </article>
 
     <div id="toc" class="toc-article">
-        <strong class="toc-title">文章目录</strong>
+        <strong class="toc-title">Contents</strong>
         
             <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#0x01-安装及配置"><span class="toc-number">1.</span> <span class="toc-text">0x01 安装及配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#开启github-pages"><span class="toc-number">1.1.</span> <span class="toc-text">开启github pages</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装git"><span class="toc-number">1.2.</span> <span class="toc-text">安装git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装nodejs"><span class="toc-number">1.3.</span> <span class="toc-text">安装nodejs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装hexo"><span class="toc-number">1.4.</span> <span class="toc-text">安装hexo</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x02-发表一篇文章"><span class="toc-number">2.</span> <span class="toc-text">0x02 发表一篇文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x03-书写文章"><span class="toc-number">3.</span> <span class="toc-text">0x03 书写文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x04-预览和修改"><span class="toc-number">4.</span> <span class="toc-text">0x04 预览和修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x05-同步到github"><span class="toc-number">5.</span> <span class="toc-text">0x05 同步到github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x06-其他小技巧"><span class="toc-number">6.</span> <span class="toc-text">0x06 其他小技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1"><span class="toc-number">6.1.</span> <span class="toc-text">1.1</span></a></li></ol></li></ol>
         
@@ -405,10 +404,10 @@
         }
     </style>
 
-    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
 
     <script>
-        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+        yiliaConfig.toc = ["Hide", "Show", !!"false"];
     </script>
 
 
@@ -469,13 +468,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
         
 
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2017/10/19/hello-world/" title="下一篇: Hello World">
+            <a href="/2017/10/19/hello-world/" title="Next: Hello World">
                 <i class="fa fa-angle-right"></i>
             </a>
         
@@ -498,14 +497,14 @@
                 2017 Dark0ne
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
@@ -514,7 +513,7 @@
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -570,9 +569,9 @@ MathJax.Hub.Queue(function() {
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
     // Open in New Window
