@@ -3,7 +3,7 @@
   
     
     <entry>
-      <title></title>
+      <title><![CDATA[Web安全资料]]></title>
       <url>/2017/10/30/web/</url>
       <content type="html"><![CDATA[<p>在学习Web安全的过程中整合的一些资料。<br>该repo会不断更新，最近更新日期为：2017/10/24。</p>
 <p>10月24日更新：</p>
@@ -508,6 +508,12 @@
 </ul>
 ]]></content>
       
+        
+        <tags>
+            
+            <tag> 安全资料 </tag>
+            
+        </tags>
         
     </entry>
     
